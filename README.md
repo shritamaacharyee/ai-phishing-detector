@@ -1,6 +1,8 @@
 # 🛡️ AI Phishing Website Detector
-🌐 **Live Demo:** [Click here to try it](YOUR_STREAMLIT_URL)
-An AI-powered machine learning model that detects phishing websites with **96.92% accuracy** using Random Forest Classification.
+
+🌐 **Live Demo:** [Try the app here](https://ai-phishing-detector-xb6ggrfappfy6kt3chuuzxk.streamlit.app/)
+
+An AI-powered machine learning tool that detects phishing websites with **96.92% accuracy** using Random Forest Classification.
 
 ---
 
@@ -17,7 +19,7 @@ Phishing attacks are one of the most common cybersecurity threats today. This pr
 | ✅ Accuracy | **96.92%** |
 | 🌲 Model | Random Forest Classifier |
 | 📊 Dataset Size | 11,054 websites |
-| 🔍 Features Used | 30 website attributes |
+| 🔍 Features Analyzed | 30 website attributes |
 
 ---
 
@@ -52,6 +54,7 @@ These features are fed into a **Random Forest Classifier** which learned pattern
 - **Scikit-learn** — Machine learning model
 - **Pandas & NumPy** — Data processing
 - **Matplotlib & Seaborn** — Visualizations
+- **Streamlit** — Web app deployment
 - **Google Colab** — Development environment
 
 ---
@@ -61,25 +64,33 @@ These features are fed into a **Random Forest Classifier** which learned pattern
 ```
 ai-phishing-detector/
 │
-├── phishing_detector.ipynb   # Main notebook with full code
-├── phishing_model.pkl        # Saved trained AI model
-├── feature_names.pkl         # Feature names used by model
-├── results.png               # Confusion matrix chart
-└── features.png              # Feature importance chart
+├── phishing_detector_model.ipynb  # Main notebook with full code
+├── app.py                         # Streamlit web app
+├── phishing_model.pkl             # Saved trained AI model
+├── feature_names.pkl              # Feature names used by model
+├── requirements.txt               # Python dependencies
+├── results.png                    # Confusion matrix chart
+└── features.png                   # Feature importance chart
 ```
 
 ---
 
-## 🚀 How to Run
+## 🚀 How to Run Locally
 
 1. Clone this repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/ai-phishing-detector.git
+git clone https://github.com/shritamaacharyee/ai-phishing-detector.git
 ```
 
-2. Open `phishing_detector.ipynb` in Google Colab or Jupyter Notebook
+2. Install dependencies
+```bash
+pip install -r requirements.txt
+```
 
-3. Upload the `phishing.csv` dataset and run all cells
+3. Run the app
+```bash
+streamlit run app.py
+```
 
 ---
 
@@ -88,16 +99,17 @@ git clone https://github.com/YOUR_USERNAME/ai-phishing-detector.git
 - **Source:** Kaggle — Phishing Website Detector Dataset
 - **Size:** 11,054 samples
 - **Features:** 30 website attributes
-- **Labels:** Phishing (-1) or Legitimate (1)
+- **Labels:** Phishing or Legitimate
 
 ---
 
-## 👨‍💻 Author
+## 👩‍💻 Author
 
-**Your Name**  
+**Shritama Acharyee**  
 Cybersecurity & AI Enthusiast  
-📧 your.email@gmail.com  
-🔗 [LinkedIn](https://linkedin.com/in/yourprofile)
+📧 shritamaacharyee@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/shritama-acharyee-4033b6307)  
+🐙 [GitHub](https://github.com/shritamaacharyee)
 
 ---
 
